@@ -58,7 +58,7 @@ INPUT_SCHEMA = {
         'required': False,
         'shape': [1],
         'example': [40]
-    }
+    },
     "max_duration":{
         'datatype': 'INT64',
         'required': False,
