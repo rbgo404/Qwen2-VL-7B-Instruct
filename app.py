@@ -20,8 +20,8 @@ class InferlessPythonModel:
         top_p = inputs.get("top_p",0.1)
         repetition_penalty = inputs.get("repetition_penalty",1.18)
         top_k = int(inputs.get("top_k",40))
-        max_tokens = inputs.get("max_tokens",256)
-        max_pixels = inputs.get("max_pixels",12845056)
+        max_tokens = int(inputs.get("max_tokens",256))
+        max_pixels = int(inputs.get("max_pixels",12845056))
 
         sampling_params = SamplingParams(temperature=temperature,top_p=top_p,repetition_penalty=repetition_penalty,
                                          top_k=top_k,max_tokens=max_tokens)
