@@ -13,7 +13,7 @@ INPUT_SCHEMA = {
     },
     "content_type": {
         'datatype': 'STRING',
-        'required': True,
+        'required': False,
         'shape': [1],
         'example': ["image"]
     },
