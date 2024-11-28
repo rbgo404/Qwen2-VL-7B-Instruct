@@ -5,11 +5,17 @@ INPUT_SCHEMA = {
         'shape': [1],
         'example': ["What does this diagram illustrate?"]
     },
-    "image_url": {
+    "content_url": {
         'datatype': 'STRING',
         'required': True,
         'shape': [1],
         'example': ["https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg"]
+    },
+    "content_type": {
+        'datatype': 'STRING',
+        'required': True,
+        'shape': [1],
+        'example': ["image"]
     },
     "system_prompt": {
         'datatype': 'STRING',
@@ -52,5 +58,11 @@ INPUT_SCHEMA = {
         'required': False,
         'shape': [1],
         'example': [40]
+    }
+    "max_duration":{
+        'datatype': 'INT64',
+        'required': False,
+        'shape': [1],
+        'example': [60]
     }
 }
